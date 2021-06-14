@@ -1,7 +1,7 @@
 
 # Runner script for all modules
 
-from sensor.load_data import load_sensor_data
+from load_data import load_sensor_data
 
 
 ##############################
