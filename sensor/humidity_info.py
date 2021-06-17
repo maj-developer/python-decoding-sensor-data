@@ -1,5 +1,5 @@
 from datetime import date
-from sensor.house_info import HouseInfo
+from house_info import HouseInfo
 
 
 class HumidityData(HouseInfo):

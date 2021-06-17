@@ -4,8 +4,8 @@ from statistics import mean
 from sensor.load_data import load_sensor_data
 from sensor.house_info import HouseInfo
 from sensor.temperature_info import TemperatureData
-from sensor.humidity_info import HumidityData
-from sensor.particle_count_info import ParticleData
+from humidity_info import HumidityData
+from particle_count_info import ParticleData
 from datetime import datetime, date
 
 
