@@ -6,7 +6,7 @@ from sensor.house_info import HouseInfo
 from sensor.temperature_info import TemperatureData
 from sensor.humidity_info import HumidityData
 from sensor.particle_count_info import ParticleData
-from sensor.energy_info import EnergyData
+from energy_info import EnergyData
 from datetime import datetime, date
 
 

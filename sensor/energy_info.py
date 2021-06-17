@@ -1,6 +1,5 @@
 from datetime import date
-
-from sensor.house_info import HouseInfo
+from house_info import HouseInfo
 
 
 class EnergyData(HouseInfo):
@@ -8,7 +7,8 @@ class EnergyData(HouseInfo):
     ENERGY_BITS = 0x0F0
 
     def _get_energy(self, rec):
-        energy = int(rec, base=16) & self.ENERGY_BITS
+        energy = int(rec, base=16)
+        energy = energy & self.ENERGY_BITS
         energy = energy >> 4
         return energy
 
@@ -27,5 +27,5 @@ class EnergyData(HouseInfo):
         return self._convert_data(recs)
 
     def calculate_energy_usage(self, data):
-        total_energy = sum([field*self.ENERGY_PER_BULB for field in data])
+        total_energy = sum([field * self.ENERGY_PER_BULB for field in data])
         return total_energy
